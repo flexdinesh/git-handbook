@@ -132,6 +132,8 @@ Cherry pick all listed commits and apply it on current branch
 
 **Step 8:** Voila! You've now successfully rebased your branch against main.
 
+Please note that after every rebase, your branch commit hashes get revised. So you will need to force push your branch to remote using `git push origin HEAD --force-with-leash` to let git know that this is intentional. If you don't use `--force-with-leash` your push will fail.
+
 (If you need to cancel your rebase at any point and revert to old state, you can always run `git rebase --abort` to do that)
 
 ## License
